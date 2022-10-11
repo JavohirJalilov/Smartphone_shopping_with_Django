@@ -7,5 +7,6 @@ def home(request):
     return JsonResponse({"OK":True})
 
 def add(request):
-    print(request.POST.get('Name'))
-    return JsonResponse({"DB":'Added'})
+    data = request.POST.getitem()
+    print(data)
+    return JsonResponse({'Data':'data'})

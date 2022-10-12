@@ -13,4 +13,4 @@ class Smartphone(models.Model):
     img_url = models.TextField()
 
     def __str__(self):
-        return f'Name: {self.name}  Company: {self.company}  RAM: {self.RAM}'
+        return f'Name:{self.name}   Company:{self.company}   RAM:{self.RAM}'
